@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Poppins:wght@200;400;600&display=swap');
+
+
+:root {
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --Very_dark: hsl(229, 23%, 23%);
+    --Dark_grayish: hsl(227, 10%, 46%);
+    --Dark_gray: hsl(0, 0%, 59%);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--Dark_cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.cardscontainer {
+    margin: 150px auto 50px;
+    width: 330px;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bubbles {
+    background: url(images/bg-pattern-card.svg);
+    height: 140px;
+}
+
+.photo {
+    position: absolute;
+    top: 87px;
+    left: 35%;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 96px;
+}
+
+.contedordatospersonales{
+    background-color: white;
+    height: 150px;
+    padding: 75px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.name{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.Age, .city{
+  color: var(--Dark_gray);
+}
+
+.city{
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.stats-container{
+    background-color: white;
+    border-top: 1px solid var(--Dark_gray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+.stadistics{
+    text-align: center;
+}
+
+.cantidad{
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--Very_dark);
+}
+
+.units{
+    font-size: 0.6em;
+    color: var(--Dark_gray);
+    letter-spacing: 2px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*---------------------------1280---------------------------------------*/
+
+@media screen and (min-width: 1280){
+    .cardscontainer{
+        width: 350px;
+    }
+}
